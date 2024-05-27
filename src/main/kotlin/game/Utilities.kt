@@ -16,9 +16,10 @@ fun processNumberInput(default: Int = Int.MIN_VALUE): Int {
 fun processStringInput(default: String = "You"): String {
     val input = readlnOrNull() ?: default
 
-    val parsedInput = input.replaceFirstChar { c ->
-        c.uppercase()
-    }
+    val parsedInput =
+        input.replaceFirstChar { c ->
+            c.uppercase()
+        }
 
     return parsedInput
 }

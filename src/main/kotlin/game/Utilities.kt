@@ -7,6 +7,7 @@ fun processNumberInput(default: Int = Int.MIN_VALUE): Int {
         try {
             input.toInt()
         } catch (_: NumberFormatException) {
+            println("What you entered is not an integer. I'll assume you meant $default")
             default
         }
 
